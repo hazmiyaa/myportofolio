@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 198 100% 46%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 198 100% 46%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 230 60% 10%;
+    --foreground: 210 40% 98%;
+    --card: 230 60% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 230 60% 15%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 198 85% 58%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 260 60% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 260 60% 25%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 198 85% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  .dark body {
+    @apply bg-gradient-to-br from-background to-secondary;
+    background-attachment: fixed;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Add padding for fixed header */
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  .container {
+    @apply px-2;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/80;
+}
+
+/* Theme transition */
+.theme-transition {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Skill progress bar */
+.skill-progress-bar {
+  @apply bg-muted rounded-full h-2.5;
+}
+
+.skill-progress-fill {
+  @apply bg-primary h-2.5 rounded-full transition-all duration-500;
+}
+
+.skill-labels {
+  @apply flex justify-between mt-2 text-sm text-muted-foreground;
+}
+
+/* Section styles */
+.section-title {
+  @apply text-3xl md:text-4xl font-bold mb-2 text-foreground relative inline-block;
+}
+
+.section-title::after {
+  content: "";
+  @apply absolute bottom-0 left-0 w-full h-1 bg-primary;
+  width: 60px;
+  bottom: -10px;
+}
+
+.section-subtitle {
+  @apply text-lg text-muted-foreground max-w-2xl mx-auto mt-6 mb-12;
+}
+
+/* Card styles */
+.service-card {
+  @apply bg-card p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-border/50 hover:border-primary/50;
+}
+
+/* Resume tabs */
+.resume-tabs {
+  @apply flex mb-6 border-b border-muted;
+}
+
+.resume-tab {
+  @apply px-6 py-3 font-medium text-muted-foreground hover:text-foreground cursor-pointer transition-colors;
+}
+
+.resume-tab.active {
+  @apply text-primary border-b-2 border-primary;
+}
+
+/* Portfolio grid */
+.portfolio-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.portfolio-item {
+  @apply relative overflow-hidden rounded-lg shadow-lg;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.portfolio-overlay {
+  @apply absolute inset-0 bg-primary/80 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
