@@ -128,19 +128,21 @@ export default function Experience() {
         </motion.div>
 
         <div className="bg-card rounded-lg shadow-lg p-6 border border-border/50">
-          <div className="resume-tabs">
+          <div className="resume-tabs flex flex-wrap gap-4 mb-6">
             <button
               type="button"
               className={`resume-tab ${
                 activeTab === "biography" ? "active" : ""
-              }`}
+              } flex items-center justify-center w-full sm:w-auto`}
               onClick={() => setActiveTab("biography")}
             >
               <span className="mr-2">01</span> BIOGRAPHY
             </button>
             <button
               type="button"
-              className={`resume-tab ${activeTab === "skills" ? "active" : ""}`}
+              className={`resume-tab ${
+                activeTab === "skills" ? "active" : ""
+              } flex items-center justify-center w-full sm:w-auto`}
               onClick={() => setActiveTab("skills")}
             >
               <span className="mr-2">02</span> SKILLS
@@ -149,7 +151,7 @@ export default function Experience() {
               type="button"
               className={`resume-tab ${
                 activeTab === "education" ? "active" : ""
-              }`}
+              } flex items-center justify-center w-full sm:w-auto`}
               onClick={() => setActiveTab("education")}
             >
               <span className="mr-2">03</span> EDUCATION

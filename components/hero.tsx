@@ -108,7 +108,9 @@ export default function Hero() {
                 size={isMobile ? "default" : "lg"}
                 variant="outline"
               >
-                <Link href="#contact">Contact Me</Link>
+                <Link href="https://drive.google.com/uc?export=download&id=1wsSfPQSKoPWwKxjuauHgR2tie2mudyEG">
+                  Download CV
+                </Link>
               </Button>
             </motion.div>
 
@@ -119,13 +121,13 @@ export default function Hero() {
               className="flex gap-4 mt-8"
             >
               <Link
-                href="#"
+                href="https://www.linkedin.com/in/hazmiya/"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Linkedin size={20} />
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/dikikul/"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Instagram size={20} />
@@ -167,7 +169,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
+        className="absolute bottom-8 w-full flex justify-center z-20"
       >
         <Button
           variant="ghost"

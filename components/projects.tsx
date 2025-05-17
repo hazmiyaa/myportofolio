@@ -105,77 +105,77 @@ export default function Projects() {
       label: "Dinar Candy",
       projects: [
         {
-          title: "Dinar Candy : Rumah Singgah",
+          title: "Dinar Candy",
           description:
             "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C9javSEBiws/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=AxcRBbvtBiY",
         },
         {
-          title: "Dinar Candy : Rumah Singgah",
+          title: "Dinar Candy",
           description:
             "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C9Uj_BHhCeO/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/D0QpCWYtGWs",
         },
         {
-          title: "Dinar Candy : Dinar vs Cupi Cupita",
+          title: "Dinar Candy",
           description:
             "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C9SKX5GBdxo/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=OQqciPB6ctA&sttick=0A",
         },
         {
-          title: "Dinar Candy : Make up",
+          title: "Dinar Candy",
           description:
             "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C89GXLhBLIO/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/Z9W2snWV4Vw",
         },
         {
-          title: "Dinar Candy : Dimsum",
+          title: "Dinar Candy",
           description:
             "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C8b8zsxhMuK/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/IdY1W0WyBdM",
         },
         {
-          title: "Dinar Candy : Bakso lava mercon",
+          title: "Dinar Candy",
           description:
             "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/bh9UwnFgYhc",
         },
         {
-          title: "Dinar Candy : Panti Asuhan",
+          title: "Dinar Candy",
           description:
             "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C6--eofBpLe/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/Xm-8w__lnQ0",
         },
         {
-          title: "Dinar Candy : Beli mainan",
+          title: "Dinar Candy",
           description:
             "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C6nO7xphfRY/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/IwmHCXEswqk",
         },
         {
-          title: "Dinar Candy : Bagi bagi Candy (BBC)",
+          title: "Dinar Candy",
           description:
             "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C6d3vGRh3eh/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=ggfD8GtjKFQ",
         },
         {
-          title: "Dinar Candy : Donasi KipasKipas",
+          title: "Dinar Candy",
           description:
             "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C6LXPtQBcTz/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=wZWaA_zbm18",
         },
         {
-          title: "Dinar Candy : HSS 5",
+          title: "Dinar Candy",
           description:
             "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C58QhKjBuQC/",
           image: "/placeholder.svg?height=720&width=1280",
@@ -188,204 +188,172 @@ export default function Projects() {
       label: "Jhon LBF",
       projects: [
         {
-          title: "Jhon LBF : Sumbang Sapi 1",
+          title: "Jhon LBF",
           description:
             "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C8QqfG1yQq9/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/3WMR0fm1q-Q",
         },
         {
-          title: "Jhon LBF : Sumbang Sapi 2",
+          title: "Jhon LBF",
           description:
             "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C75fHILhW4x/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/llS97n0Rpvo",
         },
         {
-          title: "Jhon LBF : Giveaway KipasKipas",
+          title: "Jhon LBF",
           description:
             "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C7RYYRJBR8t/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=TO9x0LLKGNk",
         },
         {
-          title: "Jhon LBF : Donasi ke Veteran Indonesia",
+          title: "Jhon LBF",
           description:
             "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C7OHiz3RlBk/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/hyFj290Te0o",
         },
         {
-          title: "Jhon LBF : Donasi ke Masjid",
+          title: "Jhon LBF",
           description:
             "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C7BFXBQxbDI/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/qzOOmXdfrPI",
         },
         {
-          title: "Jhon LBF : Donasi ke Vihara",
+          title: "Jhon LBF",
           description:
             "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C6DqzMDRxWt/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/RHCJaKsvQGk",
         },
         {
-          title: "Jhon LBF : Donasi",
+          title: "Jhon LBF",
           description:
             "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C595DsqxZSI/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/AYJ9g1s_GJc",
         },
         {
-          title: "Jhon LBF : Donasi Yayasan",
+          title: "Jhon LBF",
           description:
             "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C5uoWI9RqKA/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/E545P1j6CBE",
         },
         {
-          title: "9",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C5dTZWpxUra/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://youtu.be/5Pc1fFtuYcg",
         },
         {
-          title: "10",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C5QoXbyx32R/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://youtu.be/SE9J7c4PI2A",
         },
         {
-          title: "11",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C5FOaPXB92e/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://youtu.be/qM5gm2rv5LA",
         },
         {
-          title: "12",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C5AUolWxHo7/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://www.youtube.com/watch?v=nXuAZo_eNOg",
         },
         {
-          title: "13",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C40h2P2ReIN/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://youtu.be/VlmcwbXfK68",
         },
         {
-          title: "14",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C4yGV-VRguJ/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://youtu.be/rY6CqVGQoCg",
         },
         {
-          title: "15",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C4xLz7bxuuW/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://youtu.be/G70p-N4mzfg",
         },
         {
-          title: "16",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C4sy9f1Rdf8/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://youtu.be/cF8t5eI5wJY",
         },
         {
-          title: "17",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C4dNkgZxyQa/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://www.youtube.com/watch?v=BAncoHByk4A",
         },
         {
-          title: "18",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C4KIBrxxuIi/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://www.youtube.com/watch?v=6iGR6qndi5M",
         },
         {
-          title: "19",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C4Kegu0RpqH/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://youtu.be/kpHzbDfsGOM",
         },
         {
-          title: "20",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C4C_nOJBN18/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://www.youtube.com/watch?v=_-sRff2phWA",
         },
         {
-          title: "21",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C3-DuoAh8LQ/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://www.youtube.com/watch?v=Ih4OtGJp5RQ",
         },
         {
-          title: "22",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C37QttSRVll/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://www.youtube.com/watch?v=AvvTps80aMc",
         },
         {
-          title: "23",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C3y7gslRFii/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://www.youtube.com/watch?v=5D4OzEASPBw",
         },
         {
-          title: "24",
+          title: "Jhon LBF",
           description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
+            "Check out the Instagram reel: https://www.instagram.com/jhonlbf/reel/C3xHZs4xTOp/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
-        },
-        {
-          title: "25",
-          description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
-          image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
-        },
-        {
-          title: "26",
-          description:
-            "Check out the Instagram reel: https://www.instagram.com/dinar_candy/reel/C76AyPwB2VS/",
-          image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://drive.google.com/file/d/1H5ImQKNJ2qCw0UaPgIAr4R0hJRm2aLek/preview",
+          videoUrl: "https://www.youtube.com/watch?v=U9PK3pbaN-I",
         },
         // Tambahkan lebih banyak proyek jika diperlukan
       ],
@@ -395,45 +363,162 @@ export default function Projects() {
       label: "KipasKipas",
       projects: [
         {
-          title:
-            "KipasKipas: Menyala untuk Mimpi-Mimpi Anak di Hari Pendidikan",
+          title: "TVC KipasKipas 1",
           description: "Menyala untuk Mimpi-Mimpi Anak di Hari Pendidikan.",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=0Sm88rXXwLg",
         },
         {
-          title: "KipasKipas: A day in my Life",
+          title: "TVC KipasKipas 2",
           description:
             "Television commercial for KIPASKIPAS mobile app featuring key opinion leaders.",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=bfbCy7Rz444",
         },
         {
-          title: "COPAS (Comedy KipasKipas)",
+          title: "COPAS",
           description:
             "COPASCOM 2024 is a Stand Up competition that is here to enliven the world of Stand Up in Indonesia.",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=oxoIykURdfg&t=6708s", // Replace with an actual video URL
         },
         {
-          title: "After Movie COPAS (Comedy KipasKipas",
+          title: "After Movie COPAS",
           description: "After Movie Stand up Cometition (COPAS)",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=bJYkwi3NcPY",
+        },
+        {
+          title: "After Movie OneRun 10k TvOne",
+          description:
+            "KipasKipas sukses bekerjasama dengan tvOne untuk perhelatan OneRun 10K 2024 di Epicentrum, 26 Mei 2024",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=cI23lFNm4Lk",
         },
         // Tambahkan lebih banyak proyek jika diperlukan
       ],
     },
     {
-      id: "events",
+      id: "pinusi",
       label: "Pinusidotcom",
       projects: [
         {
-          title: "ICORCOM 2021",
+          title: "PINUSI",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=FnJ_bdYyYcY",
+        },
+        {
+          title: "PINUSI",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=X3nglGKIN_8",
+        },
+        {
+          title: "PINUSI",
           description:
-            "Teaser and awarding videos for the International Conference on Research in Communication and Media.",
+            "https://www.instagram.com/pinusidotcom/reel/C5A089VpOQ2/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=cPLAg6RvSUM",
+        },
+        {
+          title: "PINUSI",
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/C11BfOdJVqL/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=EFxxGjBSWDY",
+        },
+        {
+          title: "PINUSI",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=iBE7HGcl-H4",
+        }, // ini
+        {
+          title: "KEDAI PINTAR",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=U7DD9_58xXY",
+        },
+        {
+          title: "KEDAI PINTAR",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=XIQPSlYaz68",
+        },
+        {
+          title: "PINUSI",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=aGOxiC2K9yM",
+        },
+        {
+          title: "PINUSI",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=Yv8g4KWR9Ss",
+        },
+        {
+          title: "PINUSI",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=zlDsFZFk0xE",
+        },
+        {
+          title: "PINUSI",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=CTF9OaZ8QI0",
+        },
+        {
+          title: "PINUSI",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=SCrEL4hiB1k",
+        },
+        {
+          title: "PINUSI",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=Af426yv2coA",
+        },
+        {
+          title: "PINUSI",
+          description: "Check out the video",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=KlzprvMrI0Y",
+        },
+        // Tambahkan lebih banyak proyek jika diperlukan
+      ],
+    },
+    {
+      id: "gaia",
+      label: "Gaia Creative Nusantara",
+      projects: [
+        {
+          title: "GAIA",
+          description: "Watch Here",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "#",
+        },
+        // Tambahkan lebih banyak proyek jika diperlukan
+      ],
+    },
+    {
+      id: "bri",
+      label: "BRI",
+      projects: [
+        {
+          title: "BRI",
+          description: "Watch Here",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://youtu.be/SGVgG8qVK5M",
+        },
+        {
+          title: "BIT",
+          description: "Watch Here",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://youtu.be/A9L_Irs7Cng",
         },
         // Tambahkan lebih banyak proyek jika diperlukan
       ],
@@ -665,14 +750,14 @@ export default function Projects() {
           )}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Button asChild variant="outline" className="gap-2">
             <a href="#" target="_blank" rel="noopener noreferrer">
               View All Projects
               <ExternalLink className="h-4 w-4" />
             </a>
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

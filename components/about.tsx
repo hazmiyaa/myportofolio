@@ -4,6 +4,13 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { useMediaQuery } from "@/hooks/use-media-query";
+import { useState, useEffect } from "react";
+
+const images = [
+  "https://drive.google.com/uc?export=view&id=1AHVWzGvpKlCIbjQ7jfRLXR2zR881FW7Y",
+  "https://drive.google.com/uc?export=view&id=1SwsgUgZ6QbkLBcJDt8wZ3yNqpGncd97H",
+  "https://drive.google.com/uc?export=view&id=1DCn_JlTTuJl9taE1mx0yy5i5YzVsd3C-",
+];
 
 export default function About() {
   const [ref, inView] = useInView({
@@ -12,6 +19,15 @@ export default function About() {
   });
 
   const isMobile = useMediaQuery("(max-width: 768px)");
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000); // Ganti gambar setiap 4 detik
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section id="about" className="py-16">
@@ -103,14 +119,22 @@ export default function About() {
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-lg -z-10" />
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-lg -z-10" />
-            <div className="relative overflow-hidden rounded-lg shadow-xl border-2 border-primary/20">
-              <Image
-                src="https://drive.google.com/uc?export=view&id=1Xmpeacmnnhsz554MODfyyGahsJ_VG7Qc"
-                alt="Dicky Hazmi Bahrain"
-                width={600}
-                height={600}
-                className="w-full h-auto object-cover"
-              />
+            <div className="relative overflow-hidden rounded-lg shadow-xl border-2 border-primary/20 w-full h-auto">
+              <motion.div
+                key={currentImage}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                <Image
+                  src={images[currentImage]}
+                  alt={`Slideshow Image ${currentImage + 1}`}
+                  width={600}
+                  height={600}
+                  className="w-full h-auto object-cover"
+                />
+              </motion.div>
             </div>
           </div>
         </motion.div>
