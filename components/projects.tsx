@@ -399,6 +399,25 @@ export default function Projects() {
       ],
     },
     {
+      id: "gusmiftah",
+      label: "Gus Miftah",
+      projects: [
+        {
+          title: "Gus Miftah",
+          description: "https://www.instagram.com/jhonlbf/reel/C4CNzBsBeIB/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=4mVquD2yFCM",
+        },
+        {
+          title: "Gus Miftah",
+          description: "https://www.instagram.com/jhonlbf/reel/C3wrRL7LVds/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=WoXc3WM1OBA", // Replace with an actual video URL
+        },
+        // Tambahkan lebih banyak proyek jika diperlukan
+      ],
+    },
+    {
       id: "pinusi",
       label: "Pinusidotcom",
       projects: [
@@ -422,11 +441,53 @@ export default function Projects() {
           videoUrl: "https://www.youtube.com/watch?v=cPLAg6RvSUM",
         },
         {
-          title: "PINUSI",
+          title: "PINUSI", // ini
           description:
-            "https://www.instagram.com/pinusidotcom/reel/C11BfOdJVqL/",
+            "https://www.instagram.com/pinusidotcom/reel/C1JQAjhptx0/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl: "https://www.youtube.com/watch?v=EFxxGjBSWDY",
+          videoUrl: "https://www.youtube.com/watch?v=VG27P2TsthI",
+        },
+        {
+          title: "PINUSI", // ini 2
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/C1B1lOdrDyi/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=-Vr_vg6bSOo",
+        },
+        {
+          title: "PINUSI", // ini 3
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/C0v0X0RrSDm/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=pBfeCacGp74",
+        },
+        {
+          title: "PINUSI", // ini 4
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/C0tRnXhrsJw/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=C01DSuRk9Uk",
+        },
+        {
+          title: "PINUSI", // ini 5
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/C0iVrozJ5B4/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=j8AmV5l_8iA",
+        },
+        {
+          title: "PINUSI", // ini 6
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/C0a5QQurRKm/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=KzOs6ignGHY",
+        },
+        {
+          title: "PINUSI", // ini 7
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/C0a5QQurRKm/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=CSvwpH62lVk",
         },
         {
           title: "PINUSI",
@@ -519,6 +580,163 @@ export default function Projects() {
           description: "Watch Here",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://youtu.be/A9L_Irs7Cng",
+        },
+        // Tambahkan lebih banyak proyek jika diperlukan
+      ],
+    },
+    {
+      id: "bawaslu",
+      label: "BAWASLU",
+      projects: [
+        {
+          title: "BAWASLU",
+          description: "Watch Here",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl:
+            "https://www.youtube.com/watch?v=vDhqUYNCgQE&t=2222s&pp=ygUXYmF3YXNsdSBkZWJhdCBtYWhhc2lzd2E%3D",
+        },
+        {
+          title: "ASSET BAWASLU",
+          description: "Watch Here",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://youtu.be/hRPddVe7fb0",
+        },
+        {
+          title: "ASSET BAWASLU",
+          description: "Watch Here",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://youtu.be/gbUZBqD_sQQ",
+        },
+        {
+          title: "ASSET BAWASLU",
+          description: "Watch Here",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://youtu.be/kwK2LvUlSRU",
+        },
+        // Tambahkan lebih banyak proyek jika diperlukan
+      ],
+    },
+    {
+      id: "mans",
+      label: "Mansuri MANS",
+      projects: [
+        {
+          title: "MANSURIMANS",
+          description: "Watch Here",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl:
+            "https://www.youtube.com/watch?v=vDhqUYNCgQE&t=2222s&pp=ygUXYmF3YXNsdSBkZWJhdCBtYWhhc2lzd2E%3D",
+        },
+        {
+          title: "MANSURIMANS",
+          description: "Watch Here",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://youtu.be/hRPddVe7fb0",
+        },
+        // Tambahkan lebih banyak proyek jika diperlukan
+      ],
+    },
+    {
+      id: "laksdya",
+      label: "Laksdya DR. irvansyah",
+      projects: [
+        {
+          title: "DR. irvansyah",
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7452674666822388998?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=J-1xUljaVOw",
+        },
+        {
+          title: "DR. irvansyah",
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7456760671540120839?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=eexDTBlJnX4",
+        },
+        {
+          title: "DR. irvansyah",
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7457110366233890066?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=EKn82BJbaLE",
+        },
+        {
+          title: "DR. irvansyah",
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7457460774764612882?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=METjO89Q9YE",
+        },
+        {
+          title: "DR. irvansyah",
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7457845337059888392?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=u4q65UQsI0Y",
+        },
+        {
+          title: "DR. irvansyah",
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7458210535620791559?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=SqRLL5YTeTI",
+        },
+        {
+          title: "DR. irvansyah", // 7
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7460434253927517458?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=OyEGXmhoN-g",
+        },
+        {
+          title: "DR. irvansyah", // 8
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7458978904116595975?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=HJoMWrj4hDc",
+        },
+        {
+          title: "DR. irvansyah", // 9
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7461596479593958674?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=_Tdp1jAxz2w",
+        },
+        {
+          title: "DR. irvansyah", // 10
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7462286235713801479?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=phxoImxcXkE",
+        },
+        {
+          title: "DR. irvansyah", // 11
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7465668635672022279?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=SZQHOxQdsEk",
+        },
+        {
+          title: "DR. irvansyah", // 12
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7465978037931166983?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=r7ZXYw4AagA",
+        },
+        {
+          title: "DR. irvansyah", // 13
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7467528793767398664?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=JHgQQOiOTtw",
+        },
+        {
+          title: "DR. irvansyah", // 14
+          description:
+            "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7468255755876027655?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=jTI7jSm2aD0",
         },
         // Tambahkan lebih banyak proyek jika diperlukan
       ],
