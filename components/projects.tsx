@@ -490,11 +490,76 @@ export default function Projects() {
           videoUrl: "https://www.youtube.com/watch?v=CSvwpH62lVk",
         },
         {
-          title: "PINUSI",
-          description: "Check out the video",
+          title: "PINUSI", // ini 8
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/C0N0u-6JL4d/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl: "https://www.youtube.com/watch?v=iBE7HGcl-H4",
-        }, // ini
+          videoUrl:
+            "https://www.youtube.com/watch?v=u7GuLr3MV2A&pp=0gcJCV8BQVKahPAF",
+        },
+        {
+          title: "PINUSI", // ini 9
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/C0NvHJSJNIR/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=TuwOhk9zOwY",
+        },
+        {
+          title: "PINUSI", // ini 10
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/C0NwIMjpCgC/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=oZNVmUjGKf0",
+        },
+        {
+          title: "PINUSI", // ini 11
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/Cz3Vc7lrMLT/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=oKr0mHbNahg",
+        },
+        {
+          title: "PINUSI", // ini 12
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/CzprKbuptU-/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=uGPBxrzvkZw",
+        },
+        {
+          title: "PINUSI", // ini 13
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/CzpsA7NJrXt/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=IyTahLeirpw",
+        },
+        {
+          title: "PINUSI", // ini 14
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/Czc2jnOJPJC/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=zTG09lVfZsA",
+        },
+        {
+          title: "PINUSI", // ini 15
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/Czc4OdkJsp-/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=6A2h9PbxiWY",
+        },
+        {
+          title: "PINUSI", // ini 16
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/CzLdDKCJE9o/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=XAOpLDVDS38",
+        },
+        {
+          title: "PINUSI", // ini 17
+          description:
+            "https://www.instagram.com/pinusidotcom/reel/CzJAY45JCau/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=-t7HX1X_8wY",
+        },
         {
           title: "KEDAI PINTAR",
           description: "Check out the video",
@@ -622,16 +687,38 @@ export default function Projects() {
       projects: [
         {
           title: "MANSURIMANS",
-          description: "Watch Here",
+          description:
+            "https://www.instagram.com/masmansuri_/reel/DJ_auaXPTXl/ https://www.tiktok.com/@masmansuri_mans/video/7506850458292636936?is_from_webapp=1&sender_device=pc",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl:
-            "https://www.youtube.com/watch?v=vDhqUYNCgQE&t=2222s&pp=ygUXYmF3YXNsdSBkZWJhdCBtYWhhc2lzd2E%3D",
+          videoUrl: "https://www.youtube.com/watch?v=JBByAwZIm3Q",
         },
         {
           title: "MANSURIMANS",
-          description: "Watch Here",
+          description:
+            "https://www.instagram.com/masmansuri_/reel/DJ9AiYVPTMJ/",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl: "https://youtu.be/hRPddVe7fb0",
+          videoUrl: "https://www.youtube.com/watch?v=uskvLgEda6c",
+        },
+        {
+          title: "MANSURIMANS",
+          description:
+            "https://www.instagram.com/masmansuri_/reel/DJ8d9EEvD2r/ https://www.tiktok.com/@masmansuri_mans/video/7506511077665049864?is_from_webapp=1&sender_device=pc",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=U86W-cdKrVU",
+        },
+        {
+          title: "MANSURIMANS",
+          description:
+            "https://www.instagram.com/masmansuri_/reel/DJ2_zaBvYtR/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=i9Qa3puUnAA",
+        },
+        {
+          title: "MANSURIMANS",
+          description:
+            "https://www.instagram.com/masmansuri_/reel/DJrguWpPjRd/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=XNMLtIQF--Y",
         },
         // Tambahkan lebih banyak proyek jika diperlukan
       ],
