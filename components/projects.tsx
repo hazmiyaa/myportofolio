@@ -102,7 +102,7 @@ export default function Projects() {
   const projectCategories = [
     {
       id: "corporate",
-      label: "Dinar Candy",
+      label: "DINAR CANDY",
       projects: [
         {
           title: "Dinar Candy",
@@ -185,7 +185,7 @@ export default function Projects() {
     },
     {
       id: "jhonlbf",
-      label: "Jhon LBF",
+      label: "JHON LBF",
       projects: [
         {
           title: "Jhon LBF",
@@ -360,7 +360,7 @@ export default function Projects() {
     },
     {
       id: "social",
-      label: "KipasKipas",
+      label: "KIPASKIPAS",
       projects: [
         {
           title: "TVC KipasKipas 1",
@@ -400,7 +400,7 @@ export default function Projects() {
     },
     {
       id: "gusmiftah",
-      label: "Gus Miftah",
+      label: "GUS MIFTAH",
       projects: [
         {
           title: "Gus Miftah",
@@ -419,7 +419,7 @@ export default function Projects() {
     },
     {
       id: "pinusi",
-      label: "Pinusidotcom",
+      label: "PINUSIDOTCOM",
       projects: [
         {
           title: "PINUSI",
@@ -619,13 +619,63 @@ export default function Projects() {
     },
     {
       id: "gaia",
-      label: "Gaia Creative Nusantara",
+      label: "GAIA CREATIVE NUSANTARA",
       projects: [
         {
-          title: "GAIA",
-          description: "Watch Here",
+          title: "GAIA 1",
+          description:
+            "https://www.tiktok.com/@gaiabebasaja/video/7514271790185663800?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
           image: "/placeholder.svg?height=720&width=1280",
-          videoUrl: "#",
+          videoUrl: "https://www.youtube.com/watch?v=WgX3lWGB2Zs",
+        },
+        {
+          title: "GAIA 2",
+          description:
+            "https://www.tiktok.com/@gaiabebasaja/video/7509077387401891128?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=gxHjJ6KoTxI",
+        },
+        {
+          title: "GAIA 3",
+          description:
+            "https://www.tiktok.com/@gaiabebasaja/video/7501660051485068562?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=FJW2E7afhYE",
+        },
+        {
+          title: "GAIA 4",
+          description:
+            "https://www.tiktok.com/@gaiacreative.nusantara/video/7501655915049880850?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=d5-nakGJiyY",
+        },
+        {
+          title: "GAIA 5",
+          description:
+            "https://www.tiktok.com/@gaiacreative.nusantara/video/7496463164473625864?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=1f6JhjwhkCM",
+        },
+        {
+          title: "GAIA 6",
+          description:
+            "https://www.tiktok.com/@gaiacreative.nusantara/video/7473831154370563336?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=Q_UUiZc0Lek",
+        },
+        {
+          title: "GAIA 7",
+          description:
+            "https://www.tiktok.com/@gaiacreative.nusantara/video/7473456330485878023?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=_ZjoVPPXd5Q",
+        },
+        {
+          title: "GAIA 8",
+          description:
+            "https://www.tiktok.com/@gaiacreative.nusantara/video/7459744696689118472?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=hUVP5mbtUrc",
         },
         // Tambahkan lebih banyak proyek jika diperlukan
       ],
@@ -683,49 +733,77 @@ export default function Projects() {
     },
     {
       id: "mans",
-      label: "Mansuri MANS",
+      label: "MANSURI MANS",
       projects: [
         {
-          title: "MANSURIMANS",
+          title: "MANSURIMANS 1",
           description:
             "https://www.instagram.com/masmansuri_/reel/DJ_auaXPTXl/ https://www.tiktok.com/@masmansuri_mans/video/7506850458292636936?is_from_webapp=1&sender_device=pc",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=JBByAwZIm3Q",
         },
         {
-          title: "MANSURIMANS",
+          title: "MANSURIMANS 2",
           description:
             "https://www.instagram.com/masmansuri_/reel/DJ9AiYVPTMJ/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=uskvLgEda6c",
         },
         {
-          title: "MANSURIMANS",
+          title: "MANSURIMANS 3",
           description:
             "https://www.instagram.com/masmansuri_/reel/DJ8d9EEvD2r/ https://www.tiktok.com/@masmansuri_mans/video/7506511077665049864?is_from_webapp=1&sender_device=pc",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=U86W-cdKrVU",
         },
         {
-          title: "MANSURIMANS",
+          title: "MANSURIMANS 4",
           description:
             "https://www.instagram.com/masmansuri_/reel/DJ2_zaBvYtR/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=i9Qa3puUnAA",
         },
         {
-          title: "MANSURIMANS",
+          title: "MANSURIMANS 5",
           description:
             "https://www.instagram.com/masmansuri_/reel/DJrguWpPjRd/",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=XNMLtIQF--Y",
+        },
+        {
+          title: "MANSURIMANS 6",
+          description:
+            "https://www.instagram.com/masmansuri_/reel/DMXTdBhvSVS/ https://www.tiktok.com/@masmansuri_mans/video/7529459175026429192?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=80LbGsG9pLE",
+        },
+        {
+          title: "MANSURIMANS 7",
+          description:
+            "https://www.instagram.com/masmansuri_/reel/DMZsLqGPCrH/ https://www.tiktok.com/@masmansuri_mans/video/7529962860974345490?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=EdMP-3Aeh3c",
+        },
+        {
+          title: "MANSURIMANS",
+          description:
+            "https://www.instagram.com/masmansuri_/reel/DK121LsPyHA/",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=FYeOrhmhtHs",
+        },
+        {
+          title: "MANSURIMANS",
+          description:
+            "https://www.instagram.com/masmansuri_/reel/DLAa63XPFgU/ https://www.tiktok.com/@masmansuri_mans/video/7516941200797076743?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=tIbbfJfBUqs",
         },
         // Tambahkan lebih banyak proyek jika diperlukan
       ],
     },
     {
       id: "laksdya",
-      label: "Laksdya DR. irvansyah",
+      label: "LAKSDYA DR. IRVANSYAH",
       projects: [
         {
           title: "DR. irvansyah",
@@ -824,6 +902,69 @@ export default function Projects() {
             "https://www.tiktok.com/@laksdya.dr.irvansyah/video/7468255755876027655?is_from_webapp=1&sender_device=pc&web_id=7507261141534852616",
           image: "/placeholder.svg?height=720&width=1280",
           videoUrl: "https://www.youtube.com/watch?v=jTI7jSm2aD0",
+        },
+        // Tambahkan lebih banyak proyek jika diperlukan
+      ],
+    },
+    {
+      id: "mcn",
+      label: "ISMETH ALATAS",
+      projects: [
+        {
+          title: "ISMETH ALATAS 1",
+          description:
+            "https://www.tiktok.com/@ismethalatas/video/7501600200419544327?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=FlZgDgsjzH0",
+        },
+        {
+          title: "ISMETH ALATAS 2",
+          description:
+            "https://www.tiktok.com/@ismethalatas/video/7501648243034475784?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=aSqfack2mIQ",
+        },
+        {
+          title: "ISMETH ALATAS 3",
+          description:
+            "https://www.tiktok.com/@ismethalatas/video/7500856477217836306?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=HQvrq5Y0ioY",
+        },
+        {
+          title: "ISMETH ALATAS 4",
+          description:
+            "https://www.tiktok.com/@ismethalatas/video/7500900038806211858?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=T9fmv1VjtR0",
+        },
+        {
+          title: "ISMETH ALATAS 5",
+          description:
+            "https://www.tiktok.com/@ismethalatas/video/7498585190776720658?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=9N8C_Kb56Es",
+        },
+        {
+          title: "ISMETH ALATAS 6",
+          description:
+            "https://www.tiktok.com/@ismethalatas/video/7497162663458245895?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=5H7SxDo0M2s",
+        },
+        {
+          title: "ISMETH ALATAS 7",
+          description:
+            "https://www.tiktok.com/@ismethalatas/video/7493806087221611794?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=OMJ3GH08x7U",
+        },
+        {
+          title: "ISMETH ALATAS 8",
+          description:
+            "https://www.tiktok.com/@ismethalatas/video/7494981289477442823?is_from_webapp=1&sender_device=pc&web_id=7535694792543290888",
+          image: "/placeholder.svg?height=720&width=1280",
+          videoUrl: "https://www.youtube.com/watch?v=a-T_HfOcKYA",
         },
         // Tambahkan lebih banyak proyek jika diperlukan
       ],

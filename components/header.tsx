@@ -65,8 +65,8 @@ export default function Header() {
     { name: "Home", href: "#hero" },
     { name: "About", href: "#about" },
     { name: "Showreels", href: "#showreels" },
-    { name: "Skills", href: "#skills" },
-    { name: "Experience", href: "#experience" },
+    // { name: "Skills", href: "#skills" },
+    // { name: "Experience", href: "#experience" },
     { name: "Portfolio", href: "#portfolio" },
     { name: "Contact", href: "#contact" },
   ];

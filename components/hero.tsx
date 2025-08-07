@@ -76,10 +76,10 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-xl md:text-2xl lg:text-2xl font-medium text-muted-foreground mb-6"
             >
-              Video Editor & Content Creator
+              Video Editor
             </motion.h2>
 
-            <motion.p
+            {/* <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -88,7 +88,7 @@ export default function Hero() {
               Communications and Advertising graduate with 5 years of experience
               in video editing, bringing creative vision to life through
               compelling visual storytelling.
-            </motion.p>
+            </motion.p> */}
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -108,7 +108,7 @@ export default function Hero() {
                 size={isMobile ? "default" : "lg"}
                 variant="outline"
               >
-                <Link href="https://drive.google.com/uc?export=download&id=1wsSfPQSKoPWwKxjuauHgR2tie2mudyEG">
+                <Link href="https://drive.google.com/uc?export=download&id=1Xick9uLaWrW9ZpcNAIIcTgar5IMZoxSc">
                   Download CV
                 </Link>
               </Button>

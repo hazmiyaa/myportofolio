@@ -103,10 +103,10 @@ export default function About() {
                   Bachelor in Communications
                 </p>
               </div>
-              <div>
+              {/* <div>
                 <h3 className="text-xl font-semibold mb-2 text-primary">GPA</h3>
-                <p className="text-muted-foreground">3.45/4.00</p>
-              </div>
+                <p className="text-muted-foreground">3.42/4.00</p>
+              </div> */}
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-primary">
                   Experience

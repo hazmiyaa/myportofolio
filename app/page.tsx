@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Hero from "@/components/hero";
 import About from "@/components/about";
 import Showreels from "@/components/showreels";
-import Experience from "@/components/experience";
+// import Experience from "@/components/experience";
 import Projects from "@/components/projects";
-import Skills from "@/components/skills";
+// import Skills from "@/components/skills";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 
@@ -20,8 +20,8 @@ export default function Home() {
       <Hero />
       <About />
       <Showreels />
-      <Skills />
-      <Experience />
+      {/* <Skills /> */}
+      {/* <Experience /> */}
       <Projects />
       <Contact />
       <Footer />
