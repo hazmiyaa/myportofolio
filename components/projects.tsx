@@ -8,6 +8,7 @@ import { creatorProfiles, creatorVideos } from "@/lib/creator-videos"
 import { clientProjects } from "@/lib/client-projects"
 import { clientVideo, type PortfolioVideo } from "@/lib/video-utils"
 import { VideoCard } from "./video-preview"
+import { BrandImage } from "./brand-image"
 import SearchField from "./search-field"
 
 const creators = creatorProfiles.filter(profile => profile.handle !== "@bloxgrowblox")
@@ -52,6 +53,6 @@ export default function Projects() {
       {visible.slice(0,limit).map((video,i)=><VideoCard key={video.url + i} video={video}/>)}
     </div>
     {visible.length > limit && <button className="more-button" onClick={()=>setLimit(n=>n+9)}><Plus size={16}/>{t("Tampilkan lebih banyak", "Show more")} ({visible.length-limit})</button>}
-    {creatorView && <div className="channel-directory">{creators.map(p=><a key={p.url} href={p.url} target="_blank" rel="noreferrer"><span>{p.platform}</span>{p.handle}<ExternalLink size={13}/></a>)}</div>}
+    {creatorView && <div className="channel-directory">{creators.map(p=><a key={p.url} href={p.url} target="_blank" rel="noreferrer"><BrandImage name={p.platform}/><span>{p.platform}</span>{p.handle}<ExternalLink size={13}/></a>)}</div>}
   </section>
 }

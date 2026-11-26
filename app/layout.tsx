@@ -11,8 +11,8 @@ import { requestLanguage } from "@/lib/request-language"
 export async function generateMetadata(): Promise<Metadata> {
   const english = await requestLanguage() === "en"
   return {
-    title: { default: english ? "Dicky Hazmi Bahrain — AI Video & Roblox" : "Dicky Hazmi Bahrain — Video AI & Roblox", template: "%s | Dicky Hazmi Bahrain" },
-    description: english ? "AI videos, editing work, and Roblox games by Dicky Hazmi Bahrain." : "Video AI, hasil edit, dan proyek game Roblox karya Dicky Hazmi Bahrain.",
+    title: { default: english ? "Dicky Hazmi Bahrain — Video Editing & Roblox" : "Dicky Hazmi Bahrain — Editing Video & Roblox", template: "%s | Dicky Hazmi Bahrain" },
+    description: english ? "Short videos, client edits, and Roblox games by Dicky Hazmi Bahrain." : "Video pendek, hasil edit untuk klien, dan proyek game Roblox karya Dicky Hazmi Bahrain.",
   }
 }
 

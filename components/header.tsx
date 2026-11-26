@@ -3,8 +3,9 @@
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Clapperboard, Download, Gamepad2, House, Instagram, Linkedin, Mail, Menu, UserRound, X } from "lucide-react"
+import { Clapperboard, Download, Gamepad2, House, Mail, Menu, UserRound, X } from "lucide-react"
 import { LanguageSwitch, useLanguage } from "./language"
+import { BrandImage } from "./brand-image"
 import { ThemeToggle } from "./theme-toggle"
 
 const navigation = [
@@ -14,10 +15,11 @@ const navigation = [
   { href: "/#about", text: "Tentang saya", english: "About me", icon: UserRound },
   { href: "/#contact", text: "Kontak", english: "Contact", icon: Mail },
 ]
-const cv = "https://drive.google.com/uc?export=download&id=1Xick9uLaWrW9ZpcNAIIcTgar5IMZoxSc"
+
 
 export default function Header() {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
+  const cv = `/cv/Dicky-Hazmi-Bahrain-CV-${language.toUpperCase()}.pdf`
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
   const [section, setSection] = useState("")
@@ -60,8 +62,8 @@ export default function Header() {
         <Link key={href} href={href} aria-current={href===active ? (href.includes("#") ? "location" : "page") : undefined} onClick={()=>setOpen(false)}><Icon size={18}/>{t(text, english)}</Link>
       ))}</nav>
       <div className="side-bottom">
-        <a className="download-link" href={cv}><Download size={16}/>{t("Unduh CV", "Download CV")}</a>
-        <div className="side-tools"><LanguageSwitch/><a href="https://www.instagram.com/dikikul/" aria-label="Instagram Dicky"><Instagram size={17}/></a><a href="https://www.linkedin.com/in/hazmiya/" aria-label="LinkedIn Dicky"><Linkedin size={17}/></a><ThemeToggle/></div>
+        <a className="download-link" href={cv} download><Download size={16}/>{t("Unduh CV", "Download CV")}</a>
+        <div className="side-tools"><LanguageSwitch/><a href="https://www.instagram.com/dikikul/" aria-label="Instagram Dicky"><BrandImage name="Instagram"/></a><a href="https://www.linkedin.com/in/hazmiya/" aria-label="LinkedIn Dicky"><BrandImage name="LinkedIn"/></a><ThemeToggle/></div>
         <Link className="mini-profile" href="/#about" onClick={()=>setOpen(false)}><img src="/portrait.webp" alt="" width={38} height={38}/><span><strong>Dicky Hazmi</strong><small>Pamulang, Indonesia</small></span></Link>
       </div>
     </div>

@@ -7,7 +7,7 @@ import { robloxGames } from "@/lib/roblox-games"
 import { GameCard } from "./game-card"
 import SearchField from "./search-field"
 
-const filters = ["Semua game", "Sistem Hazmiya", "Survival"] as const
+const filters = ["Semua game", "Sistem game", "Survival"] as const
 type Filter = typeof filters[number]
 
 export default function GamesGallery() {
@@ -21,7 +21,7 @@ export default function GamesGallery() {
   )
   return <section id="koleksi" aria-labelledby="game-collection">
     <div className="library-section-heading"><h2 id="game-collection">{t("Daftar proyek", "Project list")}</h2><span className="result-count" aria-live="polite">{games.length} {t("game", games.length === 1 ? "game" : "games")}</span></div>
-    <div className="gallery-tools"><div className="filter-tabs" aria-label={t("Filter game", "Filter games")}>{filters.map(label=><button key={label} aria-pressed={filter === label} onClick={()=>setFilter(label)}>{label === "Semua game" ? t(label, "All games") : label === "Sistem Hazmiya" ? t(label, "Hazmiya system") : label}</button>)}</div>
+    <div className="gallery-tools"><div className="filter-tabs" aria-label={t("Filter game", "Filter games")}>{filters.map(label=><button key={label} aria-pressed={filter === label} onClick={()=>setFilter(label)}>{label === "Semua game" ? t(label, "All games") : label === "Sistem game" ? t(label, "Game systems") : label}</button>)}</div>
       <SearchField label={t("Cari nama game", "Search games")} value={query} onChange={setQuery}/>
     </div>
     {games.length ? <div className="media-grid">{games.map(game=><GameCard key={game.id} game={game}/>)}</div>
