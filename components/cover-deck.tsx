@@ -1,5 +1,7 @@
 "use client"
 
+import { useLanguage } from "./language"
+
 import { useEffect, useRef, useState } from "react"
 import { ChevronLeft, ChevronRight, Gamepad2, Play } from "lucide-react"
 import { VideoPreview } from "./video-preview"
@@ -9,6 +11,7 @@ import type { startDeck } from "@/lib/studio-renderer"
 export type DeckItem = { title: string; image: string; url: string; video?: PortfolioVideo }
 
 export function CoverDeck({ items, mode }: { items: DeckItem[]; mode: "video" | "game" }) {
+  const { t } = useLanguage()
   const [index,setIndex] = useState(0)
   const [ready,setReady] = useState(false)
   const canvas = useRef<HTMLCanvasElement>(null)
@@ -30,7 +33,7 @@ export function CoverDeck({ items, mode }: { items: DeckItem[]; mode: "video" | 
   },[items,mode])
   useEffect(()=>{ selected.current=index; api.current?.select(index) },[index])
 
-  return <div className={`deck deck-${mode}`} role="region" aria-label={mode==="game" ? "Pilihan game 3D" : "Filmstrip video 3D"}
+  return <div className={`deck deck-${mode}`} role="region" aria-label={mode==="game" ? t("Pilihan game 3D", "3D game gallery") : t("Filmstrip video 3D", "3D video gallery")}
     onKeyDown={e=>{ if(e.key==="ArrowLeft" || e.key==="ArrowRight") { e.preventDefault(); step(e.key==="ArrowLeft" ? -1 : 1) } }}>
     <div className="deck-viewport" onPointerDown={e=>{touch.current=e.clientX; e.currentTarget.setPointerCapture(e.pointerId)}}
       onPointerCancel={()=>{touch.current=null}}
@@ -49,8 +52,8 @@ export function CoverDeck({ items, mode }: { items: DeckItem[]; mode: "video" | 
     <div className="deck-toolbar"><div ref={action} aria-live="polite" className="deck-selected">
       {item.video ? <VideoPreview video={item.video} className="deck-open"><Play size={16} fill="currentColor"/>{item.title}</VideoPreview>
         : <a className="deck-open" href={item.url} target="_blank" rel="noreferrer"><Gamepad2 size={18}/>{item.title}</a>}
-    </div><div className="deck-controls"><button onClick={()=>step(-1)} aria-label="Karya sebelumnya"><ChevronLeft size={18}/></button>
-      <span>{index+1} / {items.length}</span><button onClick={()=>step(1)} aria-label="Karya berikutnya"><ChevronRight size={18}/></button></div>
+    </div><div className="deck-controls"><button onClick={()=>step(-1)} aria-label={t("Karya sebelumnya", "Previous project")}><ChevronLeft size={18}/></button>
+      <span>{index+1} / {items.length}</span><button onClick={()=>step(1)} aria-label={t("Karya berikutnya", "Next project")}><ChevronRight size={18}/></button></div>
     </div>
   </div>
 }

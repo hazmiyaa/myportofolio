@@ -1,5 +1,7 @@
 "use client"
 
+import { useLanguage } from "./language"
+
 import type { ReactNode } from "react"
 import { Play } from "lucide-react"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
@@ -10,6 +12,7 @@ export function VideoPreview({ video, className, children }: {
   className: string
   children: ReactNode
 }) {
+  const { t } = useLanguage()
   return <Dialog>
     <DialogTrigger asChild><button type="button" className={className}>{children}</button></DialogTrigger>
     <DialogContent className={video.portrait ? "video-modal max-w-md" : "video-modal max-w-4xl"}>
@@ -18,7 +21,7 @@ export function VideoPreview({ video, className, children }: {
         <DialogDescription>{video.handle ?? video.platform}{video.caption && " · " + video.caption}</DialogDescription>
       </DialogHeader>
       <iframe src={video.embedUrl} title={video.title} className={video.portrait ? "portrait-player" : "wide-player"} allowFullScreen allow="autoplay; encrypted-media; picture-in-picture; fullscreen" referrerPolicy="strict-origin-when-cross-origin" />
-      <div className="player-links"><a href={video.url} target="_blank" rel="noreferrer">Tonton di {video.platform}</a>{video.source && <a href={video.source} target="_blank" rel="noreferrer">Unggahan asli</a>}</div>
+      <div className="player-links"><a href={video.url} target="_blank" rel="noreferrer">{t("Tonton di", "Watch on")} {video.platform}</a>{video.source && <a href={video.source} target="_blank" rel="noreferrer">{t("Unggahan asli", "Original post")}</a>}</div>
     </DialogContent>
   </Dialog>
 }

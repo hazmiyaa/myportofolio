@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Copy } from "@/components/language"
 import { Mail, MapPin } from "lucide-react"
 import Hero from "@/components/hero"
 import Contact from "@/components/contact"
@@ -20,30 +21,30 @@ export default function Home() {
   return <main id="main" className="page-shell home-page">
     <Hero/>
     <section className="shelf" id="portfolio" aria-labelledby="home-video-title">
-      <header className="shelf-heading"><div><h2 id="home-video-title">Video yang saya edit</h2><p>Showreel saya dan dua video pendek yang saya buat untuk YouTube dan TikTok.</p></div>
-        <Link href="/videos" className="browse-link">Semua video</Link>
+      <header className="shelf-heading"><div><h2 id="home-video-title"><Copy id="Video pilihan saya" en="Selected videos"/></h2><p><Copy id="Showreel saya dan dua video pendek yang saya buat untuk YouTube dan TikTok." en="My editing reel and two shorts I made for YouTube and TikTok."/></p></div>
+        <Link href="/videos" className="browse-link"><Copy id="Semua video" en="All videos"/></Link>
       </header>
       <div className="media-grid">{featuredVideos.map(video=><VideoCard video={video} key={video.url}/>)}</div>
     </section>
     <section className="shelf game-shelf" aria-labelledby="home-game-title">
-      <header className="shelf-heading"><div><h2 id="home-game-title">Game Roblox yang saya kerjakan</h2><p>Saya mengembangkan game untuk klien. Di Mount Ilamona, saya khusus mengerjakan Sistem Hazmiya.</p></div>
-        <Link href="/games" className="browse-link">Semua game</Link>
+      <header className="shelf-heading"><div><h2 id="home-game-title"><Copy id="Game Roblox yang saya kerjakan" en="My Roblox projects"/></h2><p><Copy id="Saya mengembangkan game untuk klien. Di Mount Ilamona, saya khusus mengerjakan Sistem Hazmiya." en="I build games for clients. On Mount Ilamona, my part was the Hazmiya system."/></p></div>
+        <Link href="/games" className="browse-link"><Copy id="Semua game" en="All games"/></Link>
       </header>
       <div className="game-picks">{featuredGames.map(game=><GameCard key={game.id} game={game}/>)}</div>
     </section>
     <section id="about" className="about-layout">
       <ProfilePortrait/>
-      <div className="about-copy"><p className="location"><MapPin size={15}/>Pamulang, Tangerang Selatan</p>
-        <h2>Tentang saya</h2>
-        <p>Saya Dicky, lulusan Ilmu Komunikasi peminatan Periklanan dari Universitas Muhammadiyah Jakarta. Sudah lebih dari lima tahun saya mengedit video untuk klien dan media sosial.</p>
-        <p>Saya belajar Roblox Studio sambil mengerjakan game untuk klien. Di beberapa proyek, bagian saya khusus Sistem Hazmiya. Cuplikan prosesnya saya bagikan di <a href="https://www.tiktok.com/@bloxgrowblox" target="_blank" rel="noreferrer">@bloxgrowblox</a>.</p>
-        <dl className="skill-list" id="skills"><div><dt>Video</dt><dd>Editing, motion graphics, videografi</dd></div><div><dt>Game</dt><dd>Roblox Studio, Sistem Hazmiya</dd></div><div><dt>Perangkat AI</dt><dd>Antigravity, Claude Code, Codex, ChatGPT</dd></div></dl>
+      <div className="about-copy"><p className="location"><MapPin size={15}/><Copy id="Pamulang, Tangerang Selatan" en="Pamulang, South Tangerang"/></p>
+        <h2><Copy id="Tentang saya" en="About me"/></h2>
+        <p><Copy id="Saya Dicky, lulusan Ilmu Komunikasi peminatan Periklanan dari Universitas Muhammadiyah Jakarta. Sudah lebih dari lima tahun saya mengedit video untuk klien dan media sosial." en="I’m Dicky. I studied advertising at Universitas Muhammadiyah Jakarta and have spent over five years editing videos for clients and social media."/></p>
+        <p><Copy id="Saya juga bikin game untuk klien di Roblox Studio. Di beberapa proyek, bagian saya khusus Sistem Hazmiya. Saya bagikan prosesnya di" en="I also build client games in Roblox Studio. On some projects I work just on the Hazmiya system. I share clips of that work on"/>{" "}<a href="https://www.tiktok.com/@bloxgrowblox" target="_blank" rel="noreferrer">@bloxgrowblox</a>.</p>
+        <dl className="skill-list" id="skills"><div><dt>Video</dt><dd><Copy id="Video AI, editing, motion graphics, videografi" en="AI video, editing, motion graphics, videography"/></dd></div><div><dt>Game</dt><dd><Copy id="Roblox Studio, Sistem Hazmiya" en="Roblox Studio, Hazmiya system"/></dd></div><div><dt><Copy id="Perangkat AI" en="AI tools"/></dt><dd>Antigravity, Claude Code, Codex, ChatGPT</dd></div></dl>
       </div>
     </section>
     <section id="contact" className="contact-grid">
-      <div><h2>Kerja sama</h2><p className="contact-intro">Hubungi saya kalau kamu butuh editor video atau developer Roblox untuk proyekmu.</p>
+      <div><h2><Copy id="Kerja sama" en="Let’s work together"/></h2><p className="contact-intro"><Copy id="Punya ide video AI atau proyek Roblox? Ceritakan ke saya." en="Got an AI video idea or a Roblox project in mind? I’d love to hear about it."/></p>
         <a className="mail-line" href="mailto:bahriandicky@gmail.com"><Mail size={17}/>bahriandicky@gmail.com</a>
-        <div className="contact-social"><a href="https://www.linkedin.com/in/hazmiya/">LinkedIn</a><a href="https://www.instagram.com/dikikul/">Instagram</a><a href="tel:+6289635913489">Telepon</a></div>
+        <div className="contact-social"><a href="https://www.linkedin.com/in/hazmiya/">LinkedIn</a><a href="https://www.instagram.com/dikikul/">Instagram</a><a href="tel:+6289635913489"><Copy id="Telepon" en="Call me"/></a></div>
       </div><Contact/>
     </section>
   </main>

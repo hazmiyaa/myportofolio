@@ -1,10 +1,13 @@
 "use client"
 
+import { useLanguage } from "./language"
+
 import { useState, type FormEvent } from "react"
 import emailjs from "@emailjs/browser"
 import { Send } from "lucide-react"
 
 export default function Contact() {
+  const { t } = useLanguage()
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle")
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -22,9 +25,9 @@ export default function Contact() {
     } catch { setStatus("error") }
   }
   return <form className="contact-form" onSubmit={submit}>
-    <div className="form-pair"><label>Nama<input name="name" autoComplete="name" required/></label><label>Email<input type="email" name="email" autoComplete="email" required/></label></div>
-    <label>Nama proyek atau topik<input name="subject" required/></label><label>Ceritakan idemu<textarea name="message" placeholder="Apa yang ingin kamu buat?" rows={3} required/></label>
-    <button className="primary-action" disabled={status === "sending"}><Send size={15}/>{status === "sending" ? "Mengirim…" : "Kirim pesan"}</button>
-    <p role="status">{status === "sent" ? "Pesanmu sudah terkirim. Terima kasih!" : status === "error" ? "Pesan belum terkirim. Coba lagi atau hubungi saya lewat email." : ""}</p>
+    <div className="form-pair"><label>{t("Nama", "Name")}<input name="name" autoComplete="name" required/></label><label>Email<input type="email" name="email" autoComplete="email" required/></label></div>
+    <label>{t("Nama proyek atau topik", "Project or subject")}<input name="subject" required/></label><label>{t("Ceritakan idemu", "Tell me about your idea")}<textarea name="message" placeholder={t("Apa yang ingin kamu buat?", "What would you like to make?")} rows={3} required/></label>
+    <button className="primary-action" disabled={status === "sending"}><Send size={15}/>{status === "sending" ? t("Mengirim…", "Sending…") : t("Kirim pesan", "Send message")}</button>
+    <p role="status">{status === "sent" ? t("Pesanmu sudah terkirim. Terima kasih!", "Got your message. Thanks!") : status === "error" ? t("Pesan belum terkirim. Coba lagi atau hubungi saya lewat email.", "Your message didn’t go through. Try again or email me.") : ""}</p>
   </form>
 }

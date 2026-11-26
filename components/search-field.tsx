@@ -1,3 +1,4 @@
+import { useLanguage } from "./language"
 import { Search, X } from "lucide-react"
 
 interface SearchFieldProps {
@@ -7,9 +8,10 @@ interface SearchFieldProps {
 }
 
 export default function SearchField({ value, label, onChange }: SearchFieldProps) {
+  const { t } = useLanguage()
   return <div className="search-field">
     <Search size={16} aria-hidden="true"/>
     <input type="search" aria-label={label} placeholder={label} value={value} onChange={e=>onChange(e.target.value)}/>
-    {value && <button type="button" aria-label="Hapus pencarian" onClick={()=>onChange("")}><X size={14}/></button>}
+    {value && <button type="button" aria-label={t("Hapus pencarian", "Clear search")} onClick={()=>onChange("")}><X size={14}/></button>}
   </div>
 }
