@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { Film, Scissors, Layers, Camera, Users, Lightbulb } from "lucide-react"
+import { Film, Scissors, Layers, Camera, Users, Lightbulb, Code2 } from "lucide-react"
 
 export default function Skills() {
   const [ref, inView] = useInView({
@@ -91,6 +91,17 @@ export default function Skills() {
               </div>
             </motion.div>
           ))}
+        </div>
+        <div className="service-card mt-6">
+          <div className="flex items-center gap-3 mb-4">
+            <Code2 className="h-8 w-8 text-primary" />
+            <h3 className="text-xl font-semibold">AI Tools</h3>
+          </div>
+          <ul className="flex flex-wrap gap-2">
+            {["Antigravity", "Claude Code", "Codex", "ChatGPT"].map(tool => (
+              <li className="rounded-md bg-primary/10 px-3 py-1 text-sm font-medium text-foreground" key={tool}>{tool}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

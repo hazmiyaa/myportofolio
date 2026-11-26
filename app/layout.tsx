@@ -1,31 +1,21 @@
-import type React from "react"
-import "@/app/globals.css"
-import { Inter } from "next/font/google"
+import type { Metadata } from "next"
+import "@fontsource-variable/inter"
+import "@fontsource-variable/instrument-sans"
+import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
-import ProgressBar from "@/components/progress-bar"
+import Footer from "@/components/footer"
 
-const inter = Inter({ subsets: ["latin"] })
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <head />
-      <body className={`${inter.className} theme-transition`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          <ProgressBar />
-          <Header />
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
-  )
+export const metadata: Metadata = {
+  title: { default: "Dicky Hazmi Bahrain — Video & Game", template: "%s | Dicky Hazmi Bahrain" },
+  description: "Portofolio video editing, konten kreator, dan game Roblox karya Dicky Hazmi Bahrain.",
 }
 
-export const metadata = {
-      generator: 'v0.dev'
-    };
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return <html lang="id" suppressHydrationWarning><body>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+      <a href="#main" className="skip-link">Langsung ke konten</a>
+      <Header/><div className="content-area">{children}<Footer/></div>
+    </ThemeProvider>
+  </body></html>
+}

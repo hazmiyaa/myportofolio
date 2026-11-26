@@ -1,148 +1,67 @@
-"use client";
+"use client"
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { Menu, X, Film, Aperture, Laptop } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { useMediaQuery } from "@/hooks/use-media-query";
+import { useEffect, useRef, useState } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { Clapperboard, Download, Gamepad2, House, Instagram, Linkedin, Mail, Menu, UserRound, X } from "lucide-react"
+import { ThemeToggle } from "./theme-toggle"
+
+const navigation = [
+  { href: "/", text: "Beranda", icon: House },
+  { href: "/videos", text: "Karya video", icon: Clapperboard },
+  { href: "/games", text: "Game Roblox", icon: Gamepad2 },
+  { href: "/#about", text: "Tentang saya", icon: UserRound },
+  { href: "/#contact", text: "Kontak", icon: Mail },
+]
+const cv = "https://drive.google.com/uc?export=download&id=1Xick9uLaWrW9ZpcNAIIcTgar5IMZoxSc"
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const isMobile = useMediaQuery("(max-width: 768px)");
+  const pathname = usePathname()
+  const [open, setOpen] = useState(false)
+  const [section, setSection] = useState("")
+  const toggle = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+    if (pathname !== "/") return
+    function updateSection() {
+      const line = Math.min(window.innerHeight * .45, 320)
+      const sectionId = ["contact", "about"].find(id => {
+        const bounds = document.getElementById(id)?.getBoundingClientRect()
+        return bounds && bounds.top <= line && bounds.bottom > line
+      })
+      setSection(sectionId ? "#" + sectionId : "")
+    }
+    updateSection()
+    window.addEventListener("scroll", updateSection, { passive: true })
+    return () => window.removeEventListener("scroll", updateSection)
+  }, [pathname])
 
-    // Initial check
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Close mobile menu when switching to desktop view
   useEffect(() => {
-    if (!isMobile && isMobileMenuOpen) {
-      setIsMobileMenuOpen(false);
+    if (!open) return
+    function escape(e: KeyboardEvent) {
+      if (e.key === "Escape") { setOpen(false); toggle.current?.focus() }
     }
-  }, [isMobile, isMobileMenuOpen]);
+    window.addEventListener("keydown",escape)
+    return () => window.removeEventListener("keydown",escape)
+  }, [open])
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Get the href attribute
-    const href = e.currentTarget.getAttribute("href");
-
-    // If it's a hash link, handle smooth scrolling
-    if (href && href.startsWith("#")) {
-      e.preventDefault();
-      const targetId = href.substring(1);
-      const targetElement = document.getElementById(targetId);
-
-      if (targetElement) {
-        // Scroll to the element
-        targetElement.scrollIntoView({ behavior: "smooth" });
-
-        // Close mobile menu if open
-        if (isMobileMenuOpen) {
-          setIsMobileMenuOpen(false);
-        }
-      }
-    }
-  };
-
-  const navLinks = [
-    { name: "Home", href: "#hero" },
-    { name: "About", href: "#about" },
-    { name: "Showreels", href: "#showreels" },
-    // { name: "Skills", href: "#skills" },
-    // { name: "Experience", href: "#experience" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Contact", href: "#contact" },
-  ];
-
-  return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-background/90 backdrop-blur-md shadow-md py-2"
-          : "bg-transparent py-4"
-      }`}
-    >
-      <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link
-            href="#"
-            className="flex items-center gap-2 text-primary"
-            onClick={handleNavClick}
-          >
-            <Laptop className="h-6 w-6" />
-            <span className="font-bold text-lg">DICKY HAZMI</span>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors"
-                onClick={handleNavClick}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Theme Toggle and Mobile Menu Button */}
-          <div className="flex items-center gap-2">
-            <ThemeToggle />
-
-            <Button
-              variant="ghost"
-              size="icon"
-              className="md:hidden rounded-full"
-              onClick={toggleMobileMenu}
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
-            </Button>
-          </div>
-        </div>
+  const active = pathname === "/" ? "/" + section : pathname
+  return <header className="sidebar">
+    <div className="brand-row">
+      <Link href="/" className="brand" onClick={()=>setOpen(false)} aria-label="Hazmiya, beranda">
+        <span className="brand-sign" aria-hidden="true"><i/><i/><i/></span>Hazmiya<span className="brand-period">.</span>
+      </Link>
+      <div className="mobile-actions"><ThemeToggle/><button type="button" className="menu-toggle" ref={toggle} onClick={()=>setOpen(!open)} aria-label={open ? "Tutup menu" : "Buka menu"} aria-controls="side-content" aria-expanded={open}>{open ? <X/> : <Menu/>}</button></div>
+    </div>
+    <div id="side-content" className={open ? "side-content open" : "side-content"}>
+      <nav aria-label="Navigasi utama" className="side-nav">{navigation.map(({href, text, icon: Icon}) => (
+        <Link key={href} href={href} aria-current={href===active ? (href.includes("#") ? "location" : "page") : undefined} onClick={()=>setOpen(false)}><Icon size={18}/>{text}</Link>
+      ))}</nav>
+      <div className="side-bottom">
+        <a className="download-link" href={cv}><Download size={16}/>Unduh CV</a>
+        <div className="side-tools"><a href="https://www.instagram.com/dikikul/" aria-label="Instagram Dicky"><Instagram size={17}/></a><a href="https://www.linkedin.com/in/hazmiya/" aria-label="LinkedIn Dicky"><Linkedin size={17}/></a><ThemeToggle/></div>
+        <Link className="mini-profile" href="/#about" onClick={()=>setOpen(false)}><img src="/portrait.webp" alt="" width={38} height={38}/><span><strong>Dicky Hazmi</strong><small>Pamulang, Indonesia</small></span></Link>
       </div>
-
-      {/* Mobile Navigation */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border/20 animate-in slide-in-from-top">
-          <nav className="container px-4 py-4 flex flex-col space-y-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-foreground/80 hover:text-primary font-medium transition-colors py-2 flex items-center"
-                onClick={handleNavClick}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      )}
-    </header>
-  );
+    </div>
+  </header>
 }

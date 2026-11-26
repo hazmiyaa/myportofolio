@@ -7,9 +7,9 @@ import { useMediaQuery } from "@/hooks/use-media-query";
 import { useState, useEffect } from "react";
 
 const images = [
-  "https://drive.google.com/uc?export=view&id=1AHVWzGvpKlCIbjQ7jfRLXR2zR881FW7Y",
-  "https://drive.google.com/uc?export=view&id=1SwsgUgZ6QbkLBcJDt8wZ3yNqpGncd97H",
-  "https://drive.google.com/uc?export=view&id=1DCn_JlTTuJl9taE1mx0yy5i5YzVsd3C-",
+  "/about-1.webp",
+  "/about-2.webp",
+  "/portrait.webp",
 ];
 
 export default function About() {
